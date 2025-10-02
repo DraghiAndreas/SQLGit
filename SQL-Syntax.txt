@@ -1,0 +1,11 @@
+*SQL NU E CASE SENSITIVE, SI NU E NICI ";" NECESARA*
+
+SELECT ... FROM table
+... "Alias"
+DISTINCT - every unique item
+ORDER BY ... ASC/DESC - ordoneaza cresc/desc, alfabetic/invers
+SUM(...) - aduna toate datele din coloana
+MAX(...)/MIN(...) - maximul/minimul
+AVG(...) - media
+COUNT(...) - nr de elemente
+*pot fi si combinate, de ex : SELECT COUNT(DISTINCT ...) FROM table*
