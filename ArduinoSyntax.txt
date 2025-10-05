@@ -1,0 +1,41 @@
+Serial
+------
+
+Serial.begin(...) - de obicei baud-rate ul e 9600, poate fii oricat doar ca trb setat si in cod si in compiler
+Serial.print(...)/Serial.println(...) - printeaza in SM
+
+Serial.available() - verifica daca vin cv date, de obicei se 
+foloseste in combo de genul
+while(Serial.available()==0){} - Pt a se astepta inputul utilizatorului
+
+int ... = Serial.parseInt() - citeste de la tastatura
+float ... = Serial.parseFloat()
+String ... = Serial.readString() 
+
+Servo.h
+-------
+
+#include <Servo.h>
+
+Servo myServo - declarare variabila
+myServo.attach(pin) - atasare la un pin
+myServo.write(angle) - scrierea unui unghi
+
+
+Others
+------
+
+pinMode(pin, INPUT/OUTPUT) - ce vrei sa fie pin ul respectiv
+
+digitalWrite(pin, HIGH/LOW) - cati volti vrei sa trm la pin (HIGH - 5V, LOW - 0V)
+analogWrite(pin, units) - transmite un voltaj la pin-ul respectiv, units nu este in Volti, ci alte unitati standardizate, la Read, voltajul e interpretat pe scara 0-1023, la write pe 0-255
+
+variable = analogRead(pin) - citeste nr de unitati standardizate, legate de tensiune (voltaj), rezultatul nu e in Volti, dar poate fi convertit prin formula : result * (5./1023.)
+variable = digitalRead(pin) - 1 sau 0, depinde de voltaj
+
+
+
+
+
+
+

@@ -9,3 +9,10 @@ MAX(...)/MIN(...) - maximul/minimul
 AVG(...) - media
 COUNT(...) - nr de elemente
 *pot fi si combinate, de ex : SELECT COUNT(DISTINCT ...) FROM table*
+UPPER(...) - logic, da capitalize
+SUBSTR(...,x,y) - primele y litere, incepand cu x 
+SELECT 171*214+625 result - aparent se pot face calcule algebrice
+SELECT ... || ' ' || ... - concatanare
+TRIM(...) - da remove la whitespaces
+LENGTH(...) - nr de caractere
+ROUND(...,...) - rotunjeste
