@@ -22,6 +22,31 @@ myServo.attach(pin) - atasare la un pin
 myServo.write(angle) - scrierea unui unghi
 
 
+Stepper.h
+-------
+
+#include <Stepper.h>
+
+Stepper myStepper(stepsPerRevolution/*2048*/,8,10,9,11/*pins*/)
+myStepper.setSpeed(speed) - speed <= 15
+myStepper.step(stepsPerRevolution)
+
+LiquidCrystal.h
+---------------
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7)
+lcd.Begin(16,2)
+lcd.setCursor(..,..)
+lcd.print()
+lcd.clear()
+
+DHT.h
+-----
+DHT HT(sensePin, Type) //DHT11/22
+HT.begin()
+HT.readHumidity
+HT.readTemperature
+
+
 Others
 ------
 
