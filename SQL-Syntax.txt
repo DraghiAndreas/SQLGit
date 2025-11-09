@@ -18,6 +18,7 @@ LENGTH(...) - nr de caractere
 ROUND(...,...) - rotunjeste
 
 ---------------------------------
+
 WHERE ...
 
 .. (NOT) BETWEEN x AND y - selecteaza intre 2 valori
