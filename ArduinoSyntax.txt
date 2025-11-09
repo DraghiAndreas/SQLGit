@@ -1,6 +1,5 @@
 Serial
 ------
-
 Serial.begin(...) - de obicei baud-rate ul e 9600, poate fii oricat doar ca trb setat si in cod si in compiler
 Serial.print(...)/Serial.println(...) - printeaza in SM
 
